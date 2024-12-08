@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&display=swap');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,57 +13,76 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* General Reset */
 body {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
+  padding: 0;
+  background: #135a49; /* Dark theme */
+  color: #fff; /* Light text */
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.container {
+  text-align: center;
+  background: 	#3e9b859d; /* Darker container background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  min-height: 500px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.generate-btn {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background: 	#b8dbd3; /* React blue */
+  color: #000; /* Dark text for contrast */
+  border: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: transform 0.3s ease, 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.generate-btn:hover {
+  background: #b8dbd3b4; /* Slightly darker blue */
+}
+
+.generate-btn:active {
+  transform: scale(0.95); /* Scale down the button */
+  background: #a8bcb1;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  font-size: 26px;
+}
+
+.quote-display {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 50px;
+  margin-bottom: -40px;
+  font-size: 52px;
+  line-height: 1.5;
+  color: #dad5d5; /* Slightly lighter text */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.quote-icon {
+  color: #ffffff83; 
+  font-size: 36px; 
+  margin-right: 10px; 
 }
